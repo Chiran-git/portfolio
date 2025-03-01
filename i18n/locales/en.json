@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "home": "Home",
+    "skills": "Skills",
+    "experience": "Experience",
+    "education": "Education",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Your Name",
+    "title": "Software Engineer",
+    "summary": "A result-oriented Software Engineer with over 8 years of experience in application development, specializing in backend and frontend technologies."
+  },
+  "skills": {
+    "title": "Skills",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "tools": "Tools & Platforms",
+    "testing": "Testing & Deployment",
+    "others": "Others"
+  },
+  "experience": {
+    "title": "Professional Experience",
+    "current": "Present"
+  },
+  "education": {
+    "title": "Education",
+    "degree": "Degree",
+    "institution": "Institution",
+    "duration": "Duration"
+  },
+  "projects": {
+    "title": "Projects",
+    "technologies": "Technologies",
+    "role": "Role"
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "success": {
+      "title": "Message sent successfully!",
+      "description": "Thank you for reaching out. I'll get back to you as soon as possible.",
+      "sendAnother": "Send another message"
+    },
+    "error": {
+      "submission": "There was an error submitting your message. Please try again."
+    }
+  },
+  "languages": {
+    "title": "Languages",
+    "english": "English",
+    "hindi": "Hindi",
+    "assamese": "Assamese"
+  },
+  "footer": {
+    "rights": "All Rights Reserved",
+    "portfolio": "Portfolio",
+    "socialLinks": {
+      "github": "GitHub",
+      "linkedin": "LinkedIn",
+      "twitter": "Twitter"
+    }
+  }
+}
