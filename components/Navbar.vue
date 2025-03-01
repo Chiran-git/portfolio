@@ -40,7 +40,7 @@ const setLocale = async (loc: LocaleType) => {
 
 <template>
   <nav class="bg-white shadow-md sticky top-0 z-50">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-8">
       <div class="flex justify-between items-center h-16">
         <!-- Logo -->
         <div class="flex-shrink-0 flex items-center">

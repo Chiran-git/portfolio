@@ -42,7 +42,7 @@ const otherSkills = [
   <div>
     <!-- Header -->
     <section class="bg-primary-50 py-16">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <h1 class="text-4xl font-bold text-center text-gray-900 mb-4">{{ t('skills.title') }}</h1>
         <div class="w-20 h-1 bg-primary-500 mx-auto mb-8"></div>
         <p class="text-lg text-center text-gray-700 max-w-3xl mx-auto">
@@ -53,7 +53,7 @@ const otherSkills = [
 
     <!-- Backend Skills -->
     <section class="py-12 bg-white">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-8">{{ t('skills.backend') }}</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="space-y-8">
@@ -105,7 +105,7 @@ const otherSkills = [
 
     <!-- Frontend Skills -->
     <section class="py-12 bg-gray-50">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-8">{{ t('skills.frontend') }}</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="bg-white p-8 rounded-lg shadow-md order-2 md:order-1">
@@ -157,7 +157,7 @@ const otherSkills = [
 
     <!-- Other Skills -->
     <section class="py-12 bg-white">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Tools & Platforms -->
           <div>
@@ -207,7 +207,7 @@ const otherSkills = [
 
     <!-- Call to Action -->
     <section class="py-16 bg-primary-50">
-      <div class="container mx-auto px-4 text-center">
+      <div class="container mx-auto px-8 text-center">
         <h2 class="text-3xl font-bold mb-4 text-gray-900">{{ t('skills.ctaTitle') }}</h2>
         <p class="text-lg mb-8 text-gray-700 max-w-2xl mx-auto">
           {{ t('skills.ctaDescription') }}

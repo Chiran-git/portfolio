@@ -23,7 +23,6 @@
 
   ::-webkit-scrollbar-thumb {
     background: rgba(148, 197, 253, 0.3);
-    border-radius: 4px;
   }
 
   ::-webkit-scrollbar:hover {
@@ -68,7 +67,7 @@
 
 @layer components {
   .btn {
-    @apply px-4 py-2 rounded-md transition-colors duration-200;
+    @apply px-4 py-2 transition-colors duration-200;
   }
 
   .btn-primary {

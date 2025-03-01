@@ -64,7 +64,7 @@ const closeProjectDetails = () => {
   <div>
     <!-- Header -->
     <section class="bg-primary-50 py-16">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <h1 class="text-4xl font-bold text-center text-gray-900 mb-4">{{ t('projects.title') }}</h1>
         <div class="w-20 h-1 bg-primary-500 mx-auto mb-8"></div>
         <p class="text-lg text-center text-gray-700 max-w-3xl mx-auto">
@@ -75,7 +75,7 @@ const closeProjectDetails = () => {
 
     <!-- Projects Grid -->
     <section class="py-16 bg-white">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           <div v-for="project in projects" :key="project.id" 
               class="bg-white rounded-lg overflow-hidden shadow-md transition-transform hover:shadow-xl hover:-translate-y-1 cursor-pointer"
@@ -168,7 +168,7 @@ const closeProjectDetails = () => {
 
     <!-- Call to Action -->
     <section class="py-16 bg-primary-50">
-      <div class="container mx-auto px-4 text-center">
+      <div class="container mx-auto px-8 text-center">
         <h2 class="text-3xl font-bold mb-4 text-gray-900">Interested in working together?</h2>
         <p class="text-lg mb-8 text-gray-700 max-w-2xl mx-auto">
           I'm always open to discussing new projects and opportunities. Feel free to reach out!

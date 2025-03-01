@@ -27,6 +27,21 @@ export default {
         poppins: ['Poppins', 'sans-serif'],
         sans: ['Poppins', 'sans-serif'],
       },
+      boxShadow: {
+        'stronger': '0 10px 25px -3px rgba(0, 0, 0, 0.2), 0 4px 6px -2px rgba(0, 0, 0, 0.1)',
+        'xl': '0 15px 30px -5px rgba(0, 0, 0, 0.2), 0 8px 10px -5px rgba(0, 0, 0, 0.1)',
+      }
+    },
+    borderRadius: {
+      'none': '0',
+      'sm': '0',
+      DEFAULT: '0',
+      'md': '0',
+      'lg': '0',
+      'xl': '0',
+      '2xl': '0',
+      '3xl': '0',
+      'full': '0',
     },
   },
   plugins: [],

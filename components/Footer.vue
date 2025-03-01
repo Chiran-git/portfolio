@@ -7,7 +7,7 @@ const currentYear = new Date().getFullYear();
 
 <template>
   <footer class="bg-gray-800 text-white py-8">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-8">
       <div class="flex flex-col md:flex-row justify-between items-center">
         <div class="mb-4 md:mb-0">
           <h3 class="text-xl font-bold text-white">{{ t('footer.chiranjeeb') }}</h3>

@@ -50,7 +50,7 @@ const certifications = [
   <div>
     <!-- Header -->
     <section class="bg-primary-50 py-16">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <h1 class="text-4xl font-bold text-center text-gray-900 mb-4">{{ t('education.title') }}</h1>
         <div class="w-20 h-1 bg-primary-500 mx-auto mb-8"></div>
         <p class="text-lg text-center text-gray-700 max-w-3xl mx-auto">
@@ -61,7 +61,7 @@ const certifications = [
 
     <!-- Education Timeline -->
     <section class="py-16 bg-white">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">Academic Background</h2>
         
         <div class="relative max-w-4xl mx-auto">
@@ -103,7 +103,7 @@ const certifications = [
 
     <!-- Certifications Section -->
     <section class="py-16 bg-gray-50">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">Professional Certifications</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -123,7 +123,7 @@ const certifications = [
 
     <!-- Languages Section -->
     <section class="py-16 bg-white">
-      <div class="container mx-auto px-4 max-w-4xl">
+      <div class="container mx-auto px-8 max-w-4xl">
         <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">{{ t('languages.title') }}</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -159,7 +159,7 @@ const certifications = [
 
     <!-- Call to Action -->
     <section class="py-16 bg-primary-50">
-      <div class="container mx-auto px-4 text-center">
+      <div class="container mx-auto px-8 text-center">
         <h2 class="text-3xl font-bold mb-4 text-gray-900">Want to see my work?</h2>
         <p class="text-lg mb-8 text-gray-700 max-w-2xl mx-auto">
           Check out the projects I've worked on throughout my career.

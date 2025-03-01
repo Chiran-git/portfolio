@@ -111,7 +111,7 @@ watchEffect(() => {
   <div>
     <!-- Header -->
     <section class="bg-primary-50 py-16">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <h1 class="text-4xl font-bold text-center text-gray-900 mb-4">{{ t('experience.title') }}</h1>
         <div class="w-20 h-1 bg-primary-500 mx-auto mb-8"></div>
         <p class="text-lg text-center text-gray-700 max-w-3xl mx-auto">
@@ -122,7 +122,7 @@ watchEffect(() => {
 
     <!-- Professional Summary -->
     <section class="py-12 bg-white">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <div class="bg-primary-50 p-8 rounded-lg mb-12">
           <h2 class="text-2xl font-bold text-gray-900 mb-4">{{ t('experience.professionalSummary') }}</h2>
           <p class="text-gray-700 mb-4">
@@ -136,7 +136,7 @@ watchEffect(() => {
         <!-- Core Competencies -->
         <h2 class="text-2xl font-bold text-gray-900 mb-6">{{ t('experience.coreCompetencies') }}</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <div v-for="(competency, index) in competencies" :key="index" class="bg-white p-6 rounded-lg shadow-md border-l-4 border-primary-500">
+          <div v-for="(competency, index) in competencies" :key="index" class="bg-white p-6 shadow-stronger border-l-4 border-primary-500">
             <h3 class="font-bold text-lg mb-2">{{ competency.title }}</h3>
             <p class="text-gray-600">{{ competency.description }}</p>
           </div>
@@ -151,8 +151,8 @@ watchEffect(() => {
             
             <div class="flex">
               <!-- Timeline Circle -->
-              <div class="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-primary-100 rounded-full border-4 border-white shadow-md z-10">
-                <span class="text-primary-600 text-xl font-bold">{{ exp.company.charAt(0) }}</span>
+              <div class="relative flex items-center justify-center flex-shrink-0 w-16 h-16 bg-primary-100 rounded-full border-4 border-white shadow-stronger z-10">
+                <span class="text-primary-600 text-xl font-bold">+</span>
               </div>
               
               <!-- Content -->
@@ -183,7 +183,7 @@ watchEffect(() => {
 
     <!-- Call to Action -->
     <section class="py-16 bg-primary-50">
-      <div class="container mx-auto px-4 text-center">
+      <div class="container mx-auto px-8 text-center">
         <h2 class="text-3xl font-bold mb-4 text-gray-900">{{ t('experience.interestedBackground') }}</h2>
         <p class="text-lg mb-8 text-gray-700 max-w-2xl mx-auto">
           {{ t('experience.learnMore') }}

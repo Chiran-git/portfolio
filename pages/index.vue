@@ -8,7 +8,7 @@ const { t } = useI18n();
   <div>
     <!-- Hero Section -->
     <section class="bg-gradient-to-b from-primary-50 to-white py-20">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <div class="flex flex-col md:flex-row items-center">
           <div class="md:w-1/2 mb-8 md:mb-0">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">
@@ -28,23 +28,13 @@ const { t } = useI18n();
               </NuxtLink>
             </div>
           </div>
-          <div class="md:w-1/2 flex justify-center">
-            <div class="bg-white p-2 rounded-full shadow-xl">
-              <div class="w-64 h-64 md:w-80 md:h-80 bg-primary-100 rounded-full flex items-center justify-center">
-                <!-- Replace with your photo -->
-                <svg class="w-32 h-32 text-primary-500" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
-                </svg>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
     <!-- Summary Section -->
     <section class="py-16 bg-white">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">{{ t('hero.title') }}</h2>
           <div class="w-20 h-1 bg-primary-500 mx-auto"></div>
@@ -59,7 +49,7 @@ const { t } = useI18n();
 
     <!-- Skills Preview Section -->
     <section class="py-16 bg-gray-50">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <div class="text-center mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-4">{{ t('skills.title') }}</h2>
           <div class="w-20 h-1 bg-primary-500 mx-auto"></div>
@@ -154,7 +144,7 @@ const { t } = useI18n();
 
     <!-- Call to Action -->
     <section class="py-16 bg-primary-600 text-white">
-      <div class="container mx-auto px-4 text-center">
+      <div class="container mx-auto px-8 text-center">
         <h2 class="text-3xl font-bold mb-4">{{ t('contact.title') }}</h2>
         <p class="text-lg mb-8 max-w-2xl mx-auto">
           {{ t('contact.cta') }}

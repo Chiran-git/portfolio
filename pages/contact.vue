@@ -44,7 +44,7 @@ const submitForm = async () => {
   <div>
     <!-- Header -->
     <section class="bg-primary-50 py-16">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <h1 class="text-4xl font-bold text-center text-gray-900 mb-4">{{ t('contact.title') }}</h1>
         <div class="w-20 h-1 bg-primary-500 mx-auto mb-8"></div>
         <p class="text-lg text-center text-gray-700 max-w-3xl mx-auto">
@@ -55,7 +55,7 @@ const submitForm = async () => {
 
     <!-- Contact Form -->
     <section class="py-16 bg-white">
-      <div class="container mx-auto px-4">
+      <div class="container mx-auto px-8">
         <div class="max-w-3xl mx-auto">
           <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
             <!-- Contact Information -->
