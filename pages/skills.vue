@@ -8,7 +8,9 @@ const backendSkills = [
   { name: 'PHP', level: 95 },
   { name: 'MySQL', level: 85 },
   { name: 'MongoDB', level: 80 },
-  { name: 'Redis', level: 75 }
+  { name: 'Redis', level: 75 },
+  { name: 'Spring Boot', level: 50 },
+  { name: 'Java', level: 50 }
 ];
 
 const frontendSkills = [
@@ -32,8 +34,6 @@ const testingSkills = [
 ];
 
 const otherSkills = [
-  { name: 'Java', level: 75 },
-  { name: 'Spring Boot', level: 70 },
   { name: 'NodeJs', level: 80 }
 ];
 </script>

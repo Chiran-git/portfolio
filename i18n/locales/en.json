@@ -50,7 +50,9 @@
       "htmlCss": "HTML/CSS",
       "git": "Git",
       "aws": "AWS",
-      "jira": "Jira"
+      "jira": "Jira",
+      "springboot": "Spring Boot",
+      "java": "Java"
     }
   },
   "experience": {
