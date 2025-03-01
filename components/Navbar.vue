@@ -7,6 +7,7 @@ type LocaleOption = { code: LocaleType; name: string };
 
 const { t, locale } = useI18n<{ messages: any }>();
 const localePath = useLocalePath();
+const route = useRoute();
 const isMenuOpen = ref(false);
 
 const availableLocales = computed<LocaleOption[]>(() => ([
@@ -14,6 +15,12 @@ const availableLocales = computed<LocaleOption[]>(() => ([
   { code: 'hi', name: 'हिन्दी' },
   { code: 'as', name: 'অসমীয়া' }
 ]));
+
+const isActive = (path: string) => {
+  const currentPath = route.path.replace(/\/$/, '');
+  const checkPath = localePath(path).replace(/\/$/, '');
+  return currentPath === checkPath;
+};
 
 const toggleMenu = () => {
   isMenuOpen.value = !isMenuOpen.value;
@@ -37,27 +44,39 @@ const setLocale = async (loc: LocaleType) => {
       <div class="flex justify-between items-center h-16">
         <!-- Logo -->
         <div class="flex-shrink-0 flex items-center">
-          <NuxtLink :to="localePath('/')" class="text-primary-600 font-bold text-xl">Portfolio</NuxtLink>
+          <NuxtLink :to="localePath('/')" class="text-primary-600 font-bold text-xl">Chiranjeeb</NuxtLink>
         </div>
         
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-4">
-          <NuxtLink :to="localePath('/')" class="px-3 py-2 text-gray-700 hover:text-primary-600">
+          <NuxtLink :to="localePath('/')" 
+            class="px-3 py-2 hover:text-primary-600"
+            :class="isActive('/') ? 'text-primary-600' : 'text-gray-700'">
             {{ t('nav.home') }}
           </NuxtLink>
-          <NuxtLink :to="localePath('/skills')" class="px-3 py-2 text-gray-700 hover:text-primary-600">
+          <NuxtLink :to="localePath('/skills')" 
+            class="px-3 py-2 hover:text-primary-600"
+            :class="isActive('/skills') ? 'text-primary-600' : 'text-gray-700'">
             {{ t('nav.skills') }}
           </NuxtLink>
-          <NuxtLink :to="localePath('/experience')" class="px-3 py-2 text-gray-700 hover:text-primary-600">
+          <NuxtLink :to="localePath('/experience')" 
+            class="px-3 py-2 hover:text-primary-600"
+            :class="isActive('/experience') ? 'text-primary-600' : 'text-gray-700'">
             {{ t('nav.experience') }}
           </NuxtLink>
-          <NuxtLink :to="localePath('/education')" class="px-3 py-2 text-gray-700 hover:text-primary-600">
+          <NuxtLink :to="localePath('/education')" 
+            class="px-3 py-2 hover:text-primary-600"
+            :class="isActive('/education') ? 'text-primary-600' : 'text-gray-700'">
             {{ t('nav.education') }}
           </NuxtLink>
-          <NuxtLink :to="localePath('/projects')" class="px-3 py-2 text-gray-700 hover:text-primary-600">
+          <NuxtLink :to="localePath('/projects')" 
+            class="px-3 py-2 hover:text-primary-600"
+            :class="isActive('/projects') ? 'text-primary-600' : 'text-gray-700'">
             {{ t('nav.projects') }}
           </NuxtLink>
-          <NuxtLink :to="localePath('/contact')" class="px-3 py-2 text-gray-700 hover:text-primary-600">
+          <NuxtLink :to="localePath('/contact')" 
+            class="px-3 py-2 hover:text-primary-600"
+            :class="isActive('/contact') ? 'text-primary-600' : 'text-gray-700'">
             {{ t('nav.contact') }}
           </NuxtLink>
           
@@ -122,22 +141,40 @@ const setLocale = async (loc: LocaleType) => {
     <!-- Mobile Menu -->
     <div :class="{ 'block': isMenuOpen, 'hidden': !isMenuOpen }" class="md:hidden">
       <div class="pt-2 pb-3 space-y-1">
-        <NuxtLink :to="localePath('/')" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50" @click="closeMenu">
+        <NuxtLink :to="localePath('/')" 
+          class="block pl-3 pr-4 py-2 text-base font-medium hover:text-primary-600 hover:bg-primary-50" 
+          :class="isActive('/') ? 'text-primary-600 bg-primary-50' : 'text-gray-700'"
+          @click="closeMenu">
           {{ t('nav.home') }}
         </NuxtLink>
-        <NuxtLink :to="localePath('/skills')" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50" @click="closeMenu">
+        <NuxtLink :to="localePath('/skills')" 
+          class="block pl-3 pr-4 py-2 text-base font-medium hover:text-primary-600 hover:bg-primary-50" 
+          :class="isActive('/skills') ? 'text-primary-600 bg-primary-50' : 'text-gray-700'"
+          @click="closeMenu">
           {{ t('nav.skills') }}
         </NuxtLink>
-        <NuxtLink :to="localePath('/experience')" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50" @click="closeMenu">
+        <NuxtLink :to="localePath('/experience')" 
+          class="block pl-3 pr-4 py-2 text-base font-medium hover:text-primary-600 hover:bg-primary-50" 
+          :class="isActive('/experience') ? 'text-primary-600 bg-primary-50' : 'text-gray-700'"
+          @click="closeMenu">
           {{ t('nav.experience') }}
         </NuxtLink>
-        <NuxtLink :to="localePath('/education')" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50" @click="closeMenu">
+        <NuxtLink :to="localePath('/education')" 
+          class="block pl-3 pr-4 py-2 text-base font-medium hover:text-primary-600 hover:bg-primary-50" 
+          :class="isActive('/education') ? 'text-primary-600 bg-primary-50' : 'text-gray-700'"
+          @click="closeMenu">
           {{ t('nav.education') }}
         </NuxtLink>
-        <NuxtLink :to="localePath('/projects')" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50" @click="closeMenu">
+        <NuxtLink :to="localePath('/projects')" 
+          class="block pl-3 pr-4 py-2 text-base font-medium hover:text-primary-600 hover:bg-primary-50" 
+          :class="isActive('/projects') ? 'text-primary-600 bg-primary-50' : 'text-gray-700'"
+          @click="closeMenu">
           {{ t('nav.projects') }}
         </NuxtLink>
-        <NuxtLink :to="localePath('/contact')" class="block pl-3 pr-4 py-2 text-base font-medium text-gray-700 hover:text-primary-600 hover:bg-primary-50" @click="closeMenu">
+        <NuxtLink :to="localePath('/contact')" 
+          class="block pl-3 pr-4 py-2 text-base font-medium hover:text-primary-600 hover:bg-primary-50" 
+          :class="isActive('/contact') ? 'text-primary-600 bg-primary-50' : 'text-gray-700'"
+          @click="closeMenu">
           {{ t('nav.contact') }}
         </NuxtLink>
         

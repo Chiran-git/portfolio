@@ -10,7 +10,7 @@ const currentYear = new Date().getFullYear();
     <div class="container mx-auto px-4">
       <div class="flex flex-col md:flex-row justify-between items-center">
         <div class="mb-4 md:mb-0">
-          <h3 class="text-xl font-bold text-white">{{ t('footer.portfolio') }}</h3>
+          <h3 class="text-xl font-bold text-white">{{ t('footer.chiranjeeb') }}</h3>
           <p class="mt-2 text-gray-300">&copy; {{ currentYear }} {{ t('footer.rights') }}</p>
         </div>
         <div class="flex space-x-6">

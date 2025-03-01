@@ -10,5 +10,52 @@ export default defineI18nConfig(() => ({
     en,
     hi,
     as
+  },
+  allowComposition: true,
+  preserveDirectiveContent: true,
+  fallbackRoot: true,
+  missingWarn: false,
+  fallbackWarn: false,
+  inheritLocale: true,
+  compositionOnlyLocale: false,
+  preprocessMessageToString: false,
+  silentFallbackWarn: true,
+  numberFormats: {
+    en: {
+      currency: {
+        style: 'currency',
+        currency: 'USD'
+      },
+      decimal: {
+        style: 'decimal'
+      },
+      percent: {
+        style: 'percent'
+      }
+    },
+    hi: {
+      currency: {
+        style: 'currency',
+        currency: 'INR'
+      },
+      decimal: {
+        style: 'decimal'
+      },
+      percent: {
+        style: 'percent'
+      }
+    },
+    as: {
+      currency: {
+        style: 'currency',
+        currency: 'INR'
+      },
+      decimal: {
+        style: 'decimal'
+      },
+      percent: {
+        style: 'percent'
+      }
+    }
   }
 }))

@@ -68,7 +68,7 @@ const closeProjectDetails = () => {
         <h1 class="text-4xl font-bold text-center text-gray-900 mb-4">{{ t('projects.title') }}</h1>
         <div class="w-20 h-1 bg-primary-500 mx-auto mb-8"></div>
         <p class="text-lg text-center text-gray-700 max-w-3xl mx-auto">
-          Throughout my career, I've worked on various projects, from enterprise applications to scalable web platforms. Here are some highlights from my portfolio.
+          Throughout my career, I've worked on various projects, from enterprise applications to scalable web platforms. Here are some highlights from my work.
         </p>
       </div>
     </section>

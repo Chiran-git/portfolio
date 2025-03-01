@@ -46,7 +46,7 @@ const otherSkills = [
         <h1 class="text-4xl font-bold text-center text-gray-900 mb-4">{{ t('skills.title') }}</h1>
         <div class="w-20 h-1 bg-primary-500 mx-auto mb-8"></div>
         <p class="text-lg text-center text-gray-700 max-w-3xl mx-auto">
-          Over 8 years of experience has allowed me to develop expertise across various technologies and tools. Here's a comprehensive overview of my technical skills.
+          {{ t('skills.experienceSummary') }}
         </p>
       </div>
     </section>
@@ -68,34 +68,34 @@ const otherSkills = [
             </div>
           </div>
           <div class="bg-primary-50 p-8 rounded-lg">
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Backend Development</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">{{ t('skills.backendTitle') }}</h3>
             <p class="text-gray-700">
-              My core expertise lies in Laravel and PHP, where I've built numerous scalable applications. I have extensive experience with different database systems including MySQL and MongoDB, along with performance optimization through Redis caching.
+              {{ t('skills.backendDescription') }}
             </p>
             <ul class="mt-4 space-y-2">
               <li class="flex items-start">
                 <svg class="w-5 h-5 text-primary-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                <span>RESTful API development</span>
+                <span>{{ t('skills.backendFeatures.api') }}</span>
               </li>
               <li class="flex items-start">
                 <svg class="w-5 h-5 text-primary-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                <span>Database query optimization</span>
+                <span>{{ t('skills.backendFeatures.dbOptimization') }}</span>
               </li>
               <li class="flex items-start">
                 <svg class="w-5 h-5 text-primary-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                <span>Caching strategies</span>
+                <span>{{ t('skills.backendFeatures.caching') }}</span>
               </li>
               <li class="flex items-start">
                 <svg class="w-5 h-5 text-primary-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                <span>Authentication & authorization</span>
+                <span>{{ t('skills.backendFeatures.auth') }}</span>
               </li>
             </ul>
           </div>
@@ -109,34 +109,34 @@ const otherSkills = [
         <h2 class="text-3xl font-bold text-gray-900 mb-8">{{ t('skills.frontend') }}</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div class="bg-white p-8 rounded-lg shadow-md order-2 md:order-1">
-            <h3 class="text-xl font-bold text-gray-900 mb-4">Frontend Development</h3>
+            <h3 class="text-xl font-bold text-gray-900 mb-4">{{ t('skills.frontendTitle') }}</h3>
             <p class="text-gray-700">
-              I specialize in Vue.js for building dynamic and responsive user interfaces. My experience ranges from creating custom components to managing complex application state and integrating with RESTful APIs.
+              {{ t('skills.frontendDescription') }}
             </p>
             <ul class="mt-4 space-y-2">
               <li class="flex items-start">
                 <svg class="w-5 h-5 text-primary-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                <span>Vue.js component development</span>
+                <span>{{ t('skills.frontendFeatures.components') }}</span>
               </li>
               <li class="flex items-start">
                 <svg class="w-5 h-5 text-primary-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                <span>Responsive web design</span>
+                <span>{{ t('skills.frontendFeatures.responsive') }}</span>
               </li>
               <li class="flex items-start">
                 <svg class="w-5 h-5 text-primary-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                <span>UI/UX implementation</span>
+                <span>{{ t('skills.frontendFeatures.uiux') }}</span>
               </li>
               <li class="flex items-start">
                 <svg class="w-5 h-5 text-primary-500 mr-2 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                <span>API integration</span>
+                <span>{{ t('skills.frontendFeatures.apiIntegration') }}</span>
               </li>
             </ul>
           </div>
@@ -208,9 +208,9 @@ const otherSkills = [
     <!-- Call to Action -->
     <section class="py-16 bg-primary-50">
       <div class="container mx-auto px-4 text-center">
-        <h2 class="text-3xl font-bold mb-4 text-gray-900">Interested in my work?</h2>
+        <h2 class="text-3xl font-bold mb-4 text-gray-900">{{ t('skills.ctaTitle') }}</h2>
         <p class="text-lg mb-8 text-gray-700 max-w-2xl mx-auto">
-          Check out my experience and projects to see how I've applied these skills in real-world scenarios.
+          {{ t('skills.ctaDescription') }}
         </p>
         <div class="flex justify-center space-x-4">
           <NuxtLink to="/experience" class="btn btn-primary">

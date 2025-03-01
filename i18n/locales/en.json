@@ -22,6 +22,25 @@
     "testing": "Testing & Deployment",
     "others": "Others",
     "learnMore": "Learn More →",
+    "experienceSummary": "Over 8 years of experience has allowed me to develop expertise across various technologies and tools. Here's a comprehensive overview of my technical skills.",
+    "backendTitle": "Backend Development",
+    "backendDescription": "My core expertise lies in Laravel and PHP, where I've built numerous scalable applications. I have extensive experience with different database systems including MySQL and MongoDB, along with performance optimization through Redis caching.",
+    "backendFeatures": {
+      "api": "RESTful API development",
+      "dbOptimization": "Database query optimization",
+      "caching": "Caching strategies",
+      "auth": "Authentication & authorization"
+    },
+    "frontendTitle": "Frontend Development",
+    "frontendDescription": "I specialize in Vue.js for building dynamic and responsive user interfaces. My experience ranges from creating custom components to managing complex application state and integrating with RESTful APIs.",
+    "frontendFeatures": {
+      "components": "Vue.js component development",
+      "responsive": "Responsive web design",
+      "uiux": "UI/UX implementation",
+      "apiIntegration": "API integration"
+    },
+    "ctaTitle": "Interested in my work?",
+    "ctaDescription": "Check out my experience and projects to see how I've applied these skills in real-world scenarios.",
     "technologies": {
       "laravel": "Laravel",
       "php": "PHP",
@@ -36,7 +55,85 @@
   },
   "experience": {
     "title": "Professional Experience",
-    "current": "Present"
+    "current": "Present",
+    "professionalSummary": "Professional Summary",
+    "summaryText": "A result-oriented Software Engineer with over 7 years of experience in application development, specializing in backend and frontend technologies such as Laravel, PHP, Vue.js, and MySQL. Adept at building scalable applications, optimizing performance, and implementing innovative solutions to enhance user experience.",
+    "additionalInfo": "Proficient in Agile methodologies, Git version control, and cloud-based services like AWS.",
+    "coreCompetencies": "Core Competencies",
+    "workExperience": "Work Experience",
+    "experienceSummary": "With over 8 years of experience in software development, I have worked across various domains and technologies. Below is a summary of my professional journey.",
+    "interestedBackground": "Interested in my background?",
+    "learnMore": "Learn more about my educational background and projects I've worked on throughout my career.",
+    "competencies": {
+      "fullstack": {
+        "title": "Full-stack Web Development",
+        "description": "Expertise in Laravel, Vue.js, and MySQL to develop scalable applications."
+      },
+      "performance": {
+        "title": "Performance Optimization",
+        "description": "Efficiently optimizing database queries and backend processing."
+      },
+      "agile": {
+        "title": "Agile Development",
+        "description": "Proficient in working with Agile teams and managing project sprints."
+      },
+      "problemSolving": {
+        "title": "Problem Solving",
+        "description": "Strong analytical skills to troubleshoot and debug applications."
+      },
+      "versionControl": {
+        "title": "Version Control & CI/CD",
+        "description": "Git, Jira, and automated deployment pipelines."
+      }
+    },
+    "companies": {
+      "successive": {
+        "role": "Specialist Engineer",
+        "description": [
+          "Working as a Vue.js and Laravel developer, building and optimizing web applications.",
+          "Enhancing performance, ensuring code scalability, and improving system architecture.",
+          "Collaborating with cross-functional teams to implement new features."
+        ]
+      },
+      "cae": {
+        "role": "Senior Software Engineer",
+        "description": [
+          "Modified and added new features to an existing application using Laravel, MySQL, and AWS.",
+          "Implemented Redis caching to improve application performance.",
+          "Worked on cloud solutions for high availability and scalability."
+        ]
+      },
+      "valueFirst": {
+        "role": "Senior Software Engineer",
+        "description": [
+          "Developed and maintained applications using Laravel, Redis, and MongoDB.",
+          "Implemented Laravel Echo Server and Laravel Supervisor for real-time messaging.",
+          "Optimized database queries and reduced API response times."
+        ]
+      },
+      "ranium": {
+        "role": "Software Engineer",
+        "description": [
+          "Built web applications using Laravel and Vue.js.",
+          "Customized Magento applications to enhance e-commerce functionality.",
+          "Developed APIs and integrated third-party services."
+        ]
+      },
+      "ekodus": {
+        "role": "Software Developer, UI",
+        "description": [
+          "Developed UI components and customized WordPress themes/templates.",
+          "Improved frontend performance and user experience."
+        ]
+      },
+      "shass": {
+        "role": "Software Developer",
+        "description": [
+          "Worked on in-house projects using Laravel and MySQL.",
+          "Designed and developed user-friendly interfaces and backend systems."
+        ]
+      }
+    }
   },
   "education": {
     "title": "Education",
@@ -72,7 +169,7 @@
   },
   "footer": {
     "rights": "All Rights Reserved",
-    "portfolio": "Portfolio",
+    "chiranjeeb": "Chiranjeeb",
     "socialLinks": {
       "github": "GitHub",
       "linkedin": "LinkedIn",

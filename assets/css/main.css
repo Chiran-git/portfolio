@@ -1,14 +1,52 @@
+@import 'fonts.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   html {
-    @apply scroll-smooth;
+    @apply scroll-smooth font-poppins;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
   }
   
+  /* Scrollbar styling - Webkit */
+  ::-webkit-scrollbar {
+    width: 8px;
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(148, 197, 253, 0.3);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar:hover {
+    background: rgba(219, 234, 254, 0.1);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(148, 197, 253, 0.5);
+  }
+
+  /* Scrollbar styling - Firefox */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(111 180 255 / 67%) transparent
+  }
+
+  *:hover {
+    scrollbar-color: rgba(148, 197, 253, 0.5) rgba(219, 234, 254, 0.1);
+  }
+
   body {
-    @apply bg-gray-50 text-gray-800 font-sans;
+    @apply bg-gray-50 text-gray-800 font-poppins;
+    scroll-behavior: smooth;
   }
 
   h1, h2, h3, h4, h5, h6 {
