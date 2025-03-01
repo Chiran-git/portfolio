@@ -45,25 +45,4 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-
-  // Nitro configuration for static site generation
-  nitro: {
-    preset: 'netlify',
-    prerender: {
-      crawlLinks: true,
-      routes: [
-        '/',
-        '/skills',
-        '/projects',
-        '/experience',
-        '/education',
-        '/contact'
-      ]
-    }
-  },
-
-  // Set site URL - replace with your Netlify URL once deployed
-  app: {
-    baseURL: '/'
-  }
 })
