@@ -30,7 +30,7 @@ const educations = [
   }
 ];
 
-const certifications = [
+/*const certifications = [
   {
     title: 'Laravel Certification',
     issuer: 'Laravel',
@@ -43,7 +43,9 @@ const certifications = [
     year: '2021',
     description: 'Certification for cloud application development and deployment'
   }
-];
+];*/
+
+const certifications = [];
 </script>
 
 <template>
@@ -102,7 +104,7 @@ const certifications = [
     </section>
 
     <!-- Certifications Section -->
-    <section class="py-16 bg-gray-50">
+    <section v-if="certifications.length > 0" class="py-16 bg-gray-50">
       <div class="container mx-auto px-8">
         <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">Professional Certifications</h2>
         

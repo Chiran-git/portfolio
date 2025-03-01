@@ -1,29 +1,36 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
 
+// Import the image directly
+import heroImage from '~/assets/images/hero.jpg';
 const { t } = useI18n();
 </script>
 
 <template>
   <div>
     <!-- Hero Section -->
-    <section class="bg-gradient-to-b from-primary-50 to-white py-20">
-      <div class="container mx-auto px-8">
+    <section 
+      class="relative py-20 bg-cover" 
+      :style="`background-image: url(${heroImage}); background-position: center 56%;`"
+    >
+      <!-- Overlay for better text readability -->
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="container mx-auto px-8 relative z-10">
         <div class="flex flex-col md:flex-row items-center">
-          <div class="md:w-1/2 mb-8 md:mb-0">
+          <div class="md:w-2/3 lg:w-1/2 mb-8 md:mb-0 text-white">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">
-              <span class="block text-gray-700">{{ t('hero.greeting') }}</span>
-              <span class="text-primary-600">{{ t('hero.fullName') }}</span>
+              <span class="block text-white">{{ t('hero.greeting') }}</span>
+              <span class="text-primary-300">{{ t('hero.fullName') }}</span>
             </h1>
-            <h2 class="text-2xl md:text-3xl text-gray-700 mb-6">{{ t('hero.title') }}</h2>
-            <p class="text-lg text-gray-600 mb-8">
+            <h2 class="text-2xl md:text-3xl text-gray-200 mb-6">{{ t('hero.title') }}</h2>
+            <p class="text-lg text-gray-200 mb-8">
               {{ t('hero.summary') }}
             </p>
             <div class="flex space-x-4">
               <NuxtLink to="/projects" class="btn btn-primary">
                 {{ t('nav.projects') }}
               </NuxtLink>
-              <NuxtLink to="/contact" class="btn btn-outline">
+              <NuxtLink to="/contact" class="btn bg-white text-primary-600 hover:bg-gray-100">
                 {{ t('nav.contact') }}
               </NuxtLink>
             </div>
