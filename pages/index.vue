@@ -13,7 +13,7 @@ const { t } = useI18n();
           <div class="md:w-1/2 mb-8 md:mb-0">
             <h1 class="text-4xl md:text-5xl font-bold mb-4">
               <span class="block text-gray-700">{{ t('hero.greeting') }}</span>
-              <span class="text-primary-600">Chiranjeeb Gogoi</span>
+              <span class="text-primary-600">{{ t('hero.fullName') }}</span>
             </h1>
             <h2 class="text-2xl md:text-3xl text-gray-700 mb-6">{{ t('hero.title') }}</h2>
             <p class="text-lg text-gray-600 mb-8">
@@ -73,23 +73,23 @@ const { t } = useI18n();
                 <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                Laravel
+                {{ t('skills.technologies.laravel') }}
               </li>
               <li class="flex items-center">
                 <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                PHP
+                {{ t('skills.technologies.php') }}
               </li>
               <li class="flex items-center">
                 <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                MySQL
+                {{ t('skills.technologies.mysql') }}
               </li>
             </ul>
             <NuxtLink to="/skills" class="mt-4 inline-block text-primary-600 hover:text-primary-800">
-              Learn More →
+              {{ t('skills.learnMore') }}
             </NuxtLink>
           </div>
           
@@ -101,23 +101,23 @@ const { t } = useI18n();
                 <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                Vue.js
+                {{ t('skills.technologies.vuejs') }}
               </li>
               <li class="flex items-center">
                 <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                JavaScript
+                {{ t('skills.technologies.javascript') }}
               </li>
               <li class="flex items-center">
                 <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                HTML/CSS
+                {{ t('skills.technologies.htmlCss') }}
               </li>
             </ul>
             <NuxtLink to="/skills" class="mt-4 inline-block text-primary-600 hover:text-primary-800">
-              Learn More →
+              {{ t('skills.learnMore') }}
             </NuxtLink>
           </div>
           
@@ -129,23 +129,23 @@ const { t } = useI18n();
                 <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                Git
+                {{ t('skills.technologies.git') }}
               </li>
               <li class="flex items-center">
                 <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                AWS
+                {{ t('skills.technologies.aws') }}
               </li>
               <li class="flex items-center">
                 <svg class="w-5 h-5 text-primary-500 mr-2" fill="currentColor" viewBox="0 0 20 20">
                   <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd" />
                 </svg>
-                Jira
+                {{ t('skills.technologies.jira') }}
               </li>
             </ul>
             <NuxtLink to="/skills" class="mt-4 inline-block text-primary-600 hover:text-primary-800">
-              Learn More →
+              {{ t('skills.learnMore') }}
             </NuxtLink>
           </div>
         </div>
@@ -157,7 +157,7 @@ const { t } = useI18n();
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-3xl font-bold mb-4">{{ t('contact.title') }}</h2>
         <p class="text-lg mb-8 max-w-2xl mx-auto">
-          Interested in working together? Feel free to reach out for collaborations or just a friendly hello.
+          {{ t('contact.cta') }}
         </p>
         <NuxtLink to="/contact" class="btn bg-white text-primary-600 hover:bg-gray-100">
           {{ t('contact.title') }}

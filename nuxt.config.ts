@@ -16,10 +16,19 @@ export default defineNuxtConfig({
   i18n: {
     customRoutes: 'config',
     defaultLocale: 'en',
-    detectBrowserLanguage: false,
+    detectBrowserLanguage: {
+      useCookie: true,
+      cookieKey: 'i18n_redirected',
+      redirectOn: 'root',
+      alwaysRedirect: true,
+      cookieSecure: false,
+      cookieCrossOrigin: false,
+      cookieDomain: null,
+    },
     strategy: 'prefix_except_default',
     types: 'composition',
-    vueI18n: './plugins/i18n.ts'
+    vueI18n: './plugins/i18n.ts',
+    locales: ['en', 'hi', 'as']
   },
   
   // Color mode configuration

@@ -10,6 +10,7 @@
   "hero": {
     "greeting": "Hello, I'm",
     "name": "Your Name",
+    "fullName": "Chiranjeeb Gogoi",
     "title": "Software Engineer",
     "summary": "A result-oriented Software Engineer with over 8 years of experience in application development, specializing in backend and frontend technologies."
   },
@@ -19,7 +20,19 @@
     "frontend": "Frontend",
     "tools": "Tools & Platforms",
     "testing": "Testing & Deployment",
-    "others": "Others"
+    "others": "Others",
+    "learnMore": "Learn More →",
+    "technologies": {
+      "laravel": "Laravel",
+      "php": "PHP",
+      "mysql": "MySQL",
+      "vuejs": "Vue.js",
+      "javascript": "JavaScript",
+      "htmlCss": "HTML/CSS",
+      "git": "Git",
+      "aws": "AWS",
+      "jira": "Jira"
+    }
   },
   "experience": {
     "title": "Professional Experience",
@@ -41,6 +54,7 @@
     "email": "Email",
     "message": "Message",
     "send": "Send Message",
+    "cta": "Interested in working together? Feel free to reach out for collaborations or just a friendly hello.",
     "success": {
       "title": "Message sent successfully!",
       "description": "Thank you for reaching out. I'll get back to you as soon as possible.",
