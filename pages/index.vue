@@ -1,9 +1,14 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+import { useHead } from '#imports';
 
 // Import the image directly
 import heroImage from '~/assets/images/hero.jpg';
 const { t } = useI18n();
+
+useHead({
+  title: t('hero.fullName') + ' - ' + t('hero.title')
+});
 </script>
 
 <template>

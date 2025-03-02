@@ -153,6 +153,12 @@
     "email": "Email",
     "message": "Message",
     "send": "Send Message",
+    "intro": "I'm always interested in hearing about new projects and opportunities. Feel free to reach out!",
+    "form": {
+      "name": "Name",
+      "subject": "Subject",
+      "sending": "Sending..."
+    },
     "cta": "Interested in working together? Feel free to reach out for collaborations or just a friendly hello.",
     "success": {
       "title": "Message sent successfully!",
@@ -161,6 +167,22 @@
     },
     "error": {
       "submission": "There was an error submitting your message. Please try again."
+    },
+    "contactInfo": {
+      "title": "Contact Information",
+      "emailLabel": "Email",
+      "phoneLabel": "Phone",
+      "phone": "8761951580",
+      "locationLabel": "Location",
+      "location": "New Delhi, India"
+    },
+    "connect": {
+      "title": "Connect with me",
+      "socialLinks": {
+        "github": "GitHub",
+        "linkedin": "LinkedIn",
+        "twitter": "Twitter"
+      }
     }
   },
   "languages": {

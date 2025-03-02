@@ -1,8 +1,13 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
 import { ref, watchEffect } from 'vue';
+import { useHead } from '#imports';
 
 const { t, locale } = useI18n();
+
+useHead({
+  title: t('experience.title') + ' - ' + t('hero.fullName')
+});
 
 const competencies = [
   {
