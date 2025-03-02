@@ -22,6 +22,18 @@ export default {
           800: '#003764',
           900: '#001c32',
         },
+        secondary: {
+          50: '#faf0fc',
+          100: '#f4e1f9',
+          200: '#e9c3f3',
+          300: '#dda5ed',
+          400: '#c752d9', // main secondary color
+          500: '#b13ac3',
+          600: '#9626a7',
+          700: '#771d85',
+          800: '#591463',
+          900: '#3b0c42',
+        },
       },
       fontFamily: {
         poppins: ['Poppins', 'sans-serif'],

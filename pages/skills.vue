@@ -68,7 +68,7 @@ const otherSkills = [
                 <span class="text-sm text-gray-500">{{ skill.level }}%</span>
               </div>
               <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                <div class="h-full bg-primary-500 rounded-full" :style="{ width: skill.level + '%' }"></div>
+                <div class="h-full bg-primary-300 rounded-full" :style="{ width: skill.level + '%' }"></div>
               </div>
             </div>
           </div>
@@ -152,7 +152,7 @@ const otherSkills = [
                 <span class="text-sm text-gray-500">{{ skill.level }}%</span>
               </div>
               <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                <div class="h-full bg-primary-500 rounded-full" :style="{ width: skill.level + '%' }"></div>
+                <div class="h-full bg-primary-300 rounded-full" :style="{ width: skill.level + '%' }"></div>
               </div>
             </div>
           </div>
@@ -173,7 +173,7 @@ const otherSkills = [
                   <span class="text-lg font-medium">{{ skill.name }}</span>
                 </div>
                 <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                  <div class="h-full bg-primary-500 rounded-full" :style="{ width: skill.level + '%' }"></div>
+                  <div class="h-full bg-primary-300 rounded-full" :style="{ width: skill.level + '%' }"></div>
                 </div>
               </div>
             </div>
@@ -187,7 +187,7 @@ const otherSkills = [
                   <span class="text-lg font-medium">{{ skill.name }}</span>
                 </div>
                 <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                  <div class="h-full bg-primary-500 rounded-full" :style="{ width: skill.level + '%' }"></div>
+                  <div class="h-full bg-primary-300 rounded-full" :style="{ width: skill.level + '%' }"></div>
                 </div>
               </div>
             </div>
@@ -201,7 +201,7 @@ const otherSkills = [
                   <span class="text-lg font-medium">{{ skill.name }}</span>
                 </div>
                 <div class="h-2 bg-gray-200 rounded-full overflow-hidden">
-                  <div class="h-full bg-primary-500 rounded-full" :style="{ width: skill.level + '%' }"></div>
+                  <div class="h-full bg-primary-300 rounded-full" :style="{ width: skill.level + '%' }"></div>
                 </div>
               </div>
             </div>
