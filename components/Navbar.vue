@@ -56,18 +56,6 @@ const setLocale = async (loc: LocaleType) => {
         
         <!-- Desktop Menu -->
         <div class="hidden md:flex items-center space-x-4">
-          <!-- Theme Toggle -->
-          <button
-            @click="toggleTheme"
-            class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
-            :aria-label="isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'"
-          >
-            <div class="w-12 h-6 flex items-center bg-gray-300 dark:bg-gray-600 rounded-full px-1">
-              <div class="w-4 h-4 rounded-full bg-white transform transition-transform duration-200"
-                :class="isDark ? 'translate-x-6' : 'translate-x-0'"></div>
-            </div>
-          </button>
-
           <NuxtLink :to="localePath('/')" 
             class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400"
             :class="isActive('/') ? 'text-primary-600 dark:text-primary-400' : 'text-gray-700 dark:text-gray-300'">
@@ -100,7 +88,7 @@ const setLocale = async (loc: LocaleType) => {
           </NuxtLink>
           
           <!-- Language Switcher -->
-          <div class="relative ml-3">
+          <div class="relative">
             <button
               type="button"
               class="px-3 py-2 text-gray-700 dark:text-gray-300 hover:text-primary-600 dark:hover:text-primary-400 flex items-center"
@@ -126,18 +114,30 @@ const setLocale = async (loc: LocaleType) => {
               </button>
             </div>
           </div>
+
+          <!-- Theme Toggle for Desktop (Moved to end) -->
+          <button
+            @click="toggleTheme"
+            class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
+            :aria-label="isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'"
+          >
+            <div class="w-12 h-6 flex items-center bg-gray-300 dark:bg-gray-600 rounded-[50px] px-1">
+              <div class="w-4 h-4 rounded-[50px] bg-secondary-400 transform transition-transform duration-200"
+                :class="isDark ? 'translate-x-6' : 'translate-x-0'"></div>
+            </div>
+          </button>
         </div>
         
-        <!-- Mobile Menu Button -->
-        <div class="flex md:hidden">
-          <!-- Theme Toggle for Mobile -->
+        <!-- Mobile Menu Button and Theme Toggle -->
+        <div class="flex md:hidden items-center">
+          <!-- Theme Toggle for Mobile (Stays at start) -->
           <button
             @click="toggleTheme"
             class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 mr-2"
             :aria-label="isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'"
           >
-            <div class="w-12 h-6 flex items-center bg-gray-300 dark:bg-gray-600 rounded-full px-1">
-              <div class="w-4 h-4 rounded-full bg-white transform transition-transform duration-200"
+            <div class="w-12 h-6 flex items-center bg-gray-300 dark:bg-gray-600 rounded-[50px] px-1">
+              <div class="w-4 h-4 rounded-[50px] bg-secondary-400 transform transition-transform duration-200"
                 :class="isDark ? 'translate-x-6' : 'translate-x-0'"></div>
             </div>
           </button>
