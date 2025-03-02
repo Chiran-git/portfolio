@@ -1,9 +1,15 @@
 <template>
   <div v-if="loading" class="fixed inset-0 flex items-center justify-center bg-white/75 dark:bg-gray-900/75 z-50">
-    <svg class="animate-spin h-12 w-12 text-primary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
-      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-    </svg>
+    <div class="relative">
+      <!-- First cog -->
+      <svg class="animate-spin h-12 w-12 text-primary absolute" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm9 3h-1.7c-.2-.8-.4-1.6-.9-2.3l1.2-1.2c.4-.4.4-1 0-1.4l-1.4-1.4c-.4-.4-1-.4-1.4 0l-1.2 1.2c-.7-.5-1.5-.7-2.3-.9V3c0-.6-.4-1-1-1h-2c-.6 0-1 .4-1 1v1.7c-.8.2-1.6.4-2.3.9L6.8 4.4c-.4-.4-1-.4-1.4 0L4 5.8c-.4.4-.4 1 0 1.4l1.2 1.2c-.5.7-.7 1.5-.9 2.3H3c-.6 0-1 .4-1 1v2c0 .6.4 1 1 1h1.7c.2.8.4 1.6.9 2.3l-1.2 1.2c-.4.4-.4 1 0 1.4l1.4 1.4c.4.4 1 .4 1.4 0l1.2-1.2c.7.5 1.5.7 2.3.9V21c0 .6.4 1 1 1h2c.6 0 1-.4 1-1v-1.7c.8-.2 1.6-.4 2.3-.9l1.2 1.2c.4.4 1 .4 1.4 0l1.4-1.4c.4-.4.4-1 0-1.4l-1.2-1.2c.5-.7.7-1.5.9-2.3H21c.6 0 1-.4 1-1v-2c0-.6-.4-1-1-1zm-9 5c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"/>
+      </svg>
+      <!-- Second cog -->
+      <svg class="animate-spin h-8 w-8 text-primary absolute -right-4 top-8" style="animation-direction: reverse;" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+        <path fill="currentColor" d="M12 8c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm9 3h-1.7c-.2-.8-.4-1.6-.9-2.3l1.2-1.2c.4-.4.4-1 0-1.4l-1.4-1.4c-.4-.4-1-.4-1.4 0l-1.2 1.2c-.7-.5-1.5-.7-2.3-.9V3c0-.6-.4-1-1-1h-2c-.6 0-1 .4-1 1v1.7c-.8.2-1.6.4-2.3.9L6.8 4.4c-.4-.4-1-.4-1.4 0L4 5.8c-.4.4-.4 1 0 1.4l1.2 1.2c-.5.7-.7 1.5-.9 2.3H3c-.6 0-1 .4-1 1v2c0 .6.4 1 1 1h1.7c.2.8.4 1.6.9 2.3l-1.2 1.2c-.4.4-.4 1 0 1.4l1.4 1.4c.4.4 1 .4 1.4 0l1.2-1.2c.7.5 1.5.7 2.3.9V21c0 .6.4 1 1 1h2c.6 0 1-.4 1-1v-1.7c.8-.2 1.6-.4 2.3-.9l1.2 1.2c.4.4 1 .4 1.4 0l1.4-1.4c.4-.4.4-1 0-1.4l-1.2-1.2c.5-.7.7-1.5.9-2.3H21c.6 0 1-.4 1-1v-2c0-.6-.4-1-1-1zm-9 5c-2.2 0-4-1.8-4-4s1.8-4 4-4 4 1.8 4 4-1.8 4-4 4z"/>
+      </svg>
+    </div>
   </div>
 </template>
 

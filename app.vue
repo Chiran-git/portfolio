@@ -24,7 +24,7 @@ onMounted(() => {
     // Add a small delay to make the loading state visible
     setTimeout(() => {
       loadingSpinner.value?.useLoading().finish()
-    }, 200)
+    }, 100)
   })
 })
 </script>
