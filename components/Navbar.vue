@@ -118,7 +118,7 @@ const setLocale = async (loc: LocaleType) => {
           <!-- Theme Toggle for Desktop (Moved to end) -->
           <button
             @click="toggleTheme"
-            class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
+            class="p-2 rounded-[50px] hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
             :aria-label="isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'"
           >
             <div class="w-12 h-6 flex items-center bg-gray-300 dark:bg-gray-600 rounded-[50px] px-1">
@@ -133,7 +133,7 @@ const setLocale = async (loc: LocaleType) => {
           <!-- Theme Toggle for Mobile (Stays at start) -->
           <button
             @click="toggleTheme"
-            class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 mr-2"
+            class="p-2 rounded-[50px] hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200 mr-2"
             :aria-label="isDark ? 'Switch to Light Mode' : 'Switch to Dark Mode'"
           >
             <div class="w-12 h-6 flex items-center bg-gray-300 dark:bg-gray-600 rounded-[50px] px-1">
