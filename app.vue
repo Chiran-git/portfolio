@@ -21,10 +21,7 @@ onMounted(() => {
 
   router.afterEach((to) => {
     console.log('Navigation completed:', to.path)
-    // Add a small delay to make the loading state visible
-    setTimeout(() => {
-      loadingSpinner.value?.useLoading().finish()
-    }, 100)
+    loadingSpinner.value?.useLoading().finish();
   })
 })
 </script>

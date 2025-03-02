@@ -1,4 +1,4 @@
-@import 'fonts.css';
+@import "fonts.css";
 
 @tailwind base;
 @tailwind components;
@@ -10,37 +10,15 @@
     scroll-behavior: smooth;
     scroll-padding-top: 5rem;
   }
-  
+
   /* Scrollbar styling - Webkit */
-  ::-webkit-scrollbar {
-    width: 8px;
-    background: transparent;
+  body::-webkit-scrollbar {
+    width: .5rem;
   }
 
-  ::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  ::-webkit-scrollbar-thumb {
-    background: rgba(148, 197, 253, 0.3);
-  }
-
-  ::-webkit-scrollbar:hover {
-    background: rgba(219, 234, 254, 0.1);
-  }
-
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgba(148, 197, 253, 0.5);
-  }
-
-  /* Scrollbar styling - Firefox */
-  * {
-    scrollbar-width: thin;
-    scrollbar-color: rgb(111 180 255 / 67%) transparent
-  }
-
-  *:hover {
-    scrollbar-color: rgba(148, 197, 253, 0.5) rgba(219, 234, 254, 0.1);
+  body::-webkit-scrollbar-thumb {
+    background: linear-gradient(#cb84d6, #9bbfe1);
+    border-radius: 4px;
   }
 
   body {
@@ -48,7 +26,12 @@
     scroll-behavior: smooth;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-bold text-gray-900;
   }
 
