@@ -22,7 +22,7 @@
   }
 
   body {
-    @apply bg-gray-50 text-gray-800 font-poppins;
+    @apply bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 font-poppins transition-colors duration-200;
     scroll-behavior: smooth;
   }
 
@@ -32,7 +32,7 @@
   h4,
   h5,
   h6 {
-    @apply font-bold text-gray-900;
+    @apply font-bold text-gray-900 dark:text-white transition-colors duration-200;
   }
 
   h1 {
@@ -50,15 +50,15 @@
 
 @layer components {
   .btn {
-    @apply px-4 py-2 transition-colors duration-200;
+    @apply px-4 py-2 rounded transition-colors duration-200;
   }
 
   .btn-primary {
-    @apply bg-primary-500 hover:bg-primary-600 text-white;
+    @apply bg-primary-500 hover:bg-primary-600 text-white dark:bg-primary-600 dark:hover:bg-primary-700;
   }
 
   .btn-outline {
-    @apply border border-primary-500 text-primary-500 hover:bg-primary-50;
+    @apply border border-primary-500 text-primary-500 hover:bg-primary-50 dark:border-primary-400 dark:text-primary-400 dark:hover:bg-primary-900;
   }
 
   .container {
