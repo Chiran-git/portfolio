@@ -38,21 +38,6 @@ export default defineNuxtConfig({
     classSuffix: '',
   },
   
-  // Nitro configuration for static site generation
-  nitro: {
-    prerender: {
-      crawlLinks: true,
-      routes: [
-        '/',
-        '/projects',
-        '/skills',
-        '/education',
-        '/experience',
-        '/contact'
-      ]
-    }
-  },
-  
   // PostCSS configuration
   postcss: {
     plugins: {
