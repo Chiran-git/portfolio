@@ -56,24 +56,24 @@ const certifications = [];
 <template>
   <div>
     <!-- Header -->
-    <section class="bg-primary-50 py-16">
+    <section class="bg-primary-50 dark:bg-primary-900 py-16">
       <div class="container mx-auto px-8">
-        <h1 class="text-4xl font-bold text-center text-gray-900 mb-4">{{ t('education.title') }}</h1>
+        <h1 class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">{{ t('education.title') }}</h1>
         <div class="w-20 h-1 bg-primary-500 mx-auto mb-8"></div>
-        <p class="text-lg text-center text-gray-700 max-w-3xl mx-auto">
+        <p class="text-lg text-center text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
           A strong educational foundation combined with practical experience has shaped my technical expertise.
         </p>
       </div>
     </section>
 
     <!-- Education Timeline -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-white dark:bg-gray-800 transition-colors duration-200">
       <div class="container mx-auto px-8">
-        <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">Academic Background</h2>
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-10 text-center">Academic Background</h2>
         
         <div class="relative max-w-4xl mx-auto">
           <!-- Timeline line -->
-          <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-primary-100"></div>
+          <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-primary-100 dark:bg-primary-800"></div>
           
           <!-- Education items -->
           <div v-for="(edu, index) in educations" :key="index" 
@@ -83,23 +83,23 @@ const certifications = [];
               index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'
             ]">
               <!-- Dot marker -->
-              <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-primary-500 border-4 border-white z-10"></div>
+              <div class="absolute left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 rounded-full bg-primary-500 border-4 border-white dark:border-gray-800 z-10"></div>
               
               <!-- Content -->
               <div class="w-full md:w-5/12">
                 <div :class="[
-                  'bg-white p-6 rounded-lg shadow-md border-t-4 border-primary-500',
+                  'bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border-t-4 border-primary-500 transition-colors duration-200',
                   index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'
                 ]">
-                  <h3 class="text-xl font-bold text-gray-900 mb-2">{{ edu.degree }}</h3>
-                  <p class="text-primary-600 font-medium mb-2">{{ edu.institution }}</p>
-                  <div class="flex items-center text-gray-500 mb-4">
+                  <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ edu.degree }}</h3>
+                  <p class="text-primary-600 dark:text-primary-400 font-medium mb-2">{{ edu.institution }}</p>
+                  <div class="flex items-center text-gray-500 dark:text-gray-400 mb-4">
                     <svg class="w-4 h-4 mr-2" fill="currentColor" viewBox="0 0 20 20">
                       <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd" />
                     </svg>
                     <span>{{ edu.duration }}</span>
                   </div>
-                  <p class="text-gray-700">{{ edu.description }}</p>
+                  <p class="text-gray-700 dark:text-gray-300">{{ edu.description }}</p>
                 </div>
               </div>
             </div>
@@ -129,35 +129,35 @@ const certifications = [];
     </section>
 
     <!-- Languages Section -->
-    <section class="py-16 bg-white">
+    <section class="py-16 bg-gray-50 dark:bg-gray-900 transition-colors duration-200">
       <div class="container mx-auto px-8 max-w-4xl">
-        <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">{{ t('languages.title') }}</h2>
+        <h2 class="text-3xl font-bold text-gray-900 dark:text-white mb-10 text-center">{{ t('languages.title') }}</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- English -->
-          <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-primary-500 text-center">
-            <h3 class="text-xl font-bold text-gray-900 mb-2">{{ t('languages.english') }}</h3>
-            <p class="text-gray-600 mb-4">Fluent</p>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border-t-4 border-primary-500 text-center transition-colors duration-200">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ t('languages.english') }}</h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-4">Fluent</p>
             <div class="flex justify-center">
-              <div v-for="i in 5" :key="i" class="w-3 h-3 mx-1 rounded-full bg-primary-500"></div>
+              <div v-for="i in 5" :key="i" class="w-3 h-3 mx-1 rounded-full bg-primary-500 dark:bg-primary-400"></div>
             </div>
           </div>
           
           <!-- Hindi -->
-          <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-primary-500 text-center">
-            <h3 class="text-xl font-bold text-gray-900 mb-2">{{ t('languages.hindi') }}</h3>
-            <p class="text-gray-600 mb-4">Fluent</p>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border-t-4 border-primary-500 text-center transition-colors duration-200">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ t('languages.hindi') }}</h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-4">Fluent</p>
             <div class="flex justify-center">
-              <div v-for="i in 5" :key="i" class="w-3 h-3 mx-1 rounded-full bg-primary-500"></div>
+              <div v-for="i in 5" :key="i" class="w-3 h-3 mx-1 rounded-full bg-primary-500 dark:bg-primary-400"></div>
             </div>
           </div>
           
           <!-- Assamese -->
-          <div class="bg-white p-6 rounded-lg shadow-md border-t-4 border-primary-500 text-center">
-            <h3 class="text-xl font-bold text-gray-900 mb-2">{{ t('languages.assamese') }}</h3>
-            <p class="text-gray-600 mb-4">Fluent</p>
+          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border-t-4 border-primary-500 text-center transition-colors duration-200">
+            <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ t('languages.assamese') }}</h3>
+            <p class="text-gray-600 dark:text-gray-400 mb-4">Fluent</p>
             <div class="flex justify-center">
-              <div v-for="i in 5" :key="i" class="w-3 h-3 mx-1 rounded-full bg-primary-500"></div>
+              <div v-for="i in 5" :key="i" class="w-3 h-3 mx-1 rounded-full bg-primary-500 dark:bg-primary-400"></div>
             </div>
           </div>
         </div>
@@ -165,10 +165,10 @@ const certifications = [];
     </section>
 
     <!-- Call to Action -->
-    <section class="py-16 bg-primary-50">
+    <section class="py-16 bg-primary-50 dark:bg-primary-900 transition-colors duration-200">
       <div class="container mx-auto px-8 text-center">
-        <h2 class="text-3xl font-bold mb-4 text-gray-900">Want to see my work?</h2>
-        <p class="text-lg mb-8 text-gray-700 max-w-2xl mx-auto">
+        <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Want to see my work?</h2>
+        <p class="text-lg mb-8 text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
           Check out the projects I've worked on throughout my career.
         </p>
         <NuxtLink to="/projects" class="btn btn-primary">
