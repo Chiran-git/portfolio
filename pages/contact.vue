@@ -61,8 +61,8 @@ const submitForm = async () => {
     <!-- Contact Form -->
     <section class="py-16 bg-white dark:bg-gray-800 transition-colors duration-200">
       <div class="container mx-auto px-8">
-        <div class="max-w-3xl mx-auto">
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="max-w-3xl mx-auto bg-white dark:bg-gray-800 rounded-lg shadow-[0_4px_12px_rgba(0,0,0,0.1)] dark:shadow-[0_4px_12px_rgba(var(--primary-500-rgb),0.15)] hover:shadow-[0_8px_24px_rgba(0,0,0,0.12)] dark:hover:shadow-[0_8px_24px_rgba(var(--primary-500-rgb),0.2)] transition-shadow duration-300">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 p-8">
             <!-- Contact Information -->
             <div class="md:col-span-1">
               <div class="bg-primary-50 dark:bg-primary-900/50 p-6 rounded-lg">

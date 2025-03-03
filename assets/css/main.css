@@ -5,6 +5,14 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    --primary-500-rgb: 0, 135, 255;
+  }
+  
+  .dark {
+    --primary-500-rgb: 0, 135, 255;
+  }
+
   html {
     @apply scroll-smooth font-poppins;
     scroll-behavior: smooth;
