@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted, watch } from 'vue';
 import { useI18n, useLocalePath, useRoute, navigateTo, useColorMode } from '#imports';
 
 type LocaleType = 'en' | 'hi' | 'as';
@@ -11,7 +11,28 @@ const route = useRoute();
 const isMenuOpen = ref(false);
 const colorMode = useColorMode();
 
+// Make sure the initial isDark state matches the actual colorMode value
 const isDark = computed(() => colorMode.value === 'dark');
+
+// Ensure the theme toggle state is correctly set on initial load
+onMounted(() => {
+  // Force the color mode to apply immediately to fix the UI/toggle mismatch
+  if (colorMode.preference === 'dark') {
+    colorMode.value = 'dark';
+  } else if (colorMode.preference === 'light') {
+    colorMode.value = 'light';
+  } else if (colorMode.preference === 'system') {
+    // When system preference is set, make sure the UI reflects the actual applied value
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    colorMode.value = isDarkMode ? 'dark' : 'light';
+  }
+  
+  // Move the DOM manipulation code to onMounted to ensure it only runs on client-side
+  // This ensures the toggle button state stays in sync with the actual theme
+  watch(() => colorMode.value, (newValue) => {
+    document.documentElement.classList.toggle('dark', newValue === 'dark');
+  }, { immediate: true });
+});
 
 const toggleTheme = () => {
   colorMode.preference = colorMode.value === 'dark' ? 'light' : 'dark';
