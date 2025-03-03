@@ -78,32 +78,32 @@ const setLocale = async (loc: LocaleType) => {
         <!-- Desktop Menu (Center) -->
         <div class="hidden md:flex items-center justify-center flex-1 space-x-4">
           <NuxtLink :to="localePath('/')" 
-            class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400 uppercase font-bold relative nav-link"
+            class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400 font-bold relative nav-link"
             :class="isActive('/') ? 'text-primary-600 dark:text-primary-400' : 'text-gray-700 dark:text-gray-300'">
             {{ t('nav.home') }}
           </NuxtLink>
           <NuxtLink :to="localePath('/skills')" 
-            class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400 uppercase font-bold relative nav-link"
+            class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400 font-bold relative nav-link"
             :class="isActive('/skills') ? 'text-primary-600 dark:text-primary-400' : 'text-gray-700 dark:text-gray-300'">
             {{ t('nav.skills') }}
           </NuxtLink>
           <NuxtLink :to="localePath('/experience')" 
-            class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400 uppercase font-bold relative nav-link"
+            class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400 font-bold relative nav-link"
             :class="isActive('/experience') ? 'text-primary-600 dark:text-primary-400' : 'text-gray-700 dark:text-gray-300'">
             {{ t('nav.experience') }}
           </NuxtLink>
           <NuxtLink :to="localePath('/education')" 
-            class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400 uppercase font-bold relative nav-link"
+            class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400 font-bold relative nav-link"
             :class="isActive('/education') ? 'text-primary-600 dark:text-primary-400' : 'text-gray-700 dark:text-gray-300'">
             {{ t('nav.education') }}
           </NuxtLink>
           <NuxtLink :to="localePath('/projects')" 
-            class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400 uppercase font-bold relative nav-link"
+            class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400 font-bold relative nav-link"
             :class="isActive('/projects') ? 'text-primary-600 dark:text-primary-400' : 'text-gray-700 dark:text-gray-300'">
             {{ t('nav.projects') }}
           </NuxtLink>
           <NuxtLink :to="localePath('/contact')" 
-            class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400 uppercase font-bold relative nav-link"
+            class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400 font-bold relative nav-link"
             :class="isActive('/contact') ? 'text-primary-600 dark:text-primary-400' : 'text-gray-700 dark:text-gray-300'">
             {{ t('nav.contact') }}
           </NuxtLink>
@@ -197,37 +197,37 @@ const setLocale = async (loc: LocaleType) => {
     <div :class="{ 'block': isMenuOpen, 'hidden': !isMenuOpen }" class="md:hidden">
       <div class="pt-2 pb-3 space-y-1">
         <NuxtLink :to="localePath('/')" 
-          class="block pl-3 pr-4 py-2 text-base font-bold hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-700 uppercase" 
+          class="block pl-3 pr-4 py-2 text-base font-bold hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-700" 
           :class="isActive('/') ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-gray-700' : 'text-gray-700 dark:text-gray-300'"
           @click="closeMenu">
           {{ t('nav.home') }}
         </NuxtLink>
         <NuxtLink :to="localePath('/skills')" 
-          class="block pl-3 pr-4 py-2 text-base font-bold hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-700 uppercase" 
+          class="block pl-3 pr-4 py-2 text-base font-bold hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-700" 
           :class="isActive('/skills') ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-gray-700' : 'text-gray-700 dark:text-gray-300'"
           @click="closeMenu">
           {{ t('nav.skills') }}
         </NuxtLink>
         <NuxtLink :to="localePath('/experience')" 
-          class="block pl-3 pr-4 py-2 text-base font-bold hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-700 uppercase" 
+          class="block pl-3 pr-4 py-2 text-base font-bold hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-700" 
           :class="isActive('/experience') ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-gray-700' : 'text-gray-700 dark:text-gray-300'"
           @click="closeMenu">
           {{ t('nav.experience') }}
         </NuxtLink>
         <NuxtLink :to="localePath('/education')" 
-          class="block pl-3 pr-4 py-2 text-base font-bold hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-700 uppercase" 
+          class="block pl-3 pr-4 py-2 text-base font-bold hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-700" 
           :class="isActive('/education') ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-gray-700' : 'text-gray-700 dark:text-gray-300'"
           @click="closeMenu">
           {{ t('nav.education') }}
         </NuxtLink>
         <NuxtLink :to="localePath('/projects')" 
-          class="block pl-3 pr-4 py-2 text-base font-bold hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-700 uppercase" 
+          class="block pl-3 pr-4 py-2 text-base font-bold hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-700" 
           :class="isActive('/projects') ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-gray-700' : 'text-gray-700 dark:text-gray-300'"
           @click="closeMenu">
           {{ t('nav.projects') }}
         </NuxtLink>
         <NuxtLink :to="localePath('/contact')" 
-          class="block pl-3 pr-4 py-2 text-base font-bold hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-700 uppercase" 
+          class="block pl-3 pr-4 py-2 text-base font-bold hover:text-primary-600 dark:hover:text-primary-400 hover:bg-primary-50 dark:hover:bg-gray-700" 
           :class="isActive('/contact') ? 'text-primary-600 dark:text-primary-400 bg-primary-50 dark:bg-gray-700' : 'text-gray-700 dark:text-gray-300'"
           @click="closeMenu">
           {{ t('nav.contact') }}
