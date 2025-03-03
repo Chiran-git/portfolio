@@ -70,13 +70,13 @@ const setLocale = async (loc: LocaleType) => {
   <nav class="bg-white dark:bg-gray-800 shadow-md sticky top-0 z-50 transition-colors duration-200">
     <div class="container mx-auto px-8">
       <div class="flex justify-between items-center h-16">
-        <!-- Logo -->
-        <div class="flex-shrink-0 flex items-center">
+        <!-- Logo (Left) -->
+        <div class="flex-shrink-0 flex items-center w-1/4">
           <NuxtLink :to="localePath('/')" class="text-primary-600 dark:text-primary-400 font-bold text-xl">Chiranjeeb</NuxtLink>
         </div>
         
-        <!-- Desktop Menu -->
-        <div class="hidden md:flex items-center space-x-4">
+        <!-- Desktop Menu (Center) -->
+        <div class="hidden md:flex items-center justify-center flex-1 space-x-4">
           <NuxtLink :to="localePath('/')" 
             class="px-3 py-2 hover:text-primary-600 dark:hover:text-primary-400"
             :class="isActive('/') ? 'text-primary-600 dark:text-primary-400' : 'text-gray-700 dark:text-gray-300'">
@@ -107,7 +107,10 @@ const setLocale = async (loc: LocaleType) => {
             :class="isActive('/contact') ? 'text-primary-600 dark:text-primary-400' : 'text-gray-700 dark:text-gray-300'">
             {{ t('nav.contact') }}
           </NuxtLink>
-          
+        </div>
+
+        <!-- Controls (Right) -->
+        <div class="hidden md:flex items-center justify-end space-x-4 w-1/4">
           <!-- Language Switcher -->
           <div class="relative">
             <button
@@ -136,7 +139,7 @@ const setLocale = async (loc: LocaleType) => {
             </div>
           </div>
 
-          <!-- Theme Toggle for Desktop (Moved to end) -->
+          <!-- Theme Toggle for Desktop -->
           <button
             @click="toggleTheme"
             class="p-2 rounded-[50px] hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200"
@@ -149,7 +152,7 @@ const setLocale = async (loc: LocaleType) => {
           </button>
         </div>
         
-        <!-- Mobile Menu Button and Theme Toggle -->
+        <!-- Mobile Menu Button -->
         <div class="flex md:hidden items-center">
           <!-- Theme Toggle for Mobile (Stays at start) -->
           <button
