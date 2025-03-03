@@ -18,6 +18,7 @@ export default {
           300: '#66b7ff',
           400: '#339fff',
           500: '#0087ff', // main theme color
+          '500-rgb': '0, 135, 255', // RGB values for box shadow
           600: '#006ccb',
           700: '#005198',
           800: '#003764',
