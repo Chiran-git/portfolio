@@ -14,6 +14,14 @@
     "title": "Software Engineer",
     "summary": "A result-oriented Software Engineer with over 8 years of experience in application development, specializing in backend and frontend technologies."
   },
+  "professional": {
+    "title": "Professional Summary",
+    "summary": {
+      "1": "A result-oriented Software Engineer with over 8 years of experience in application development, specializing in backend and frontend technologies such as Laravel, PHP, Vue.js, and MySQL. Adept at building scalable applications, optimizing performance, and implementing innovative solutions to enhance user experience.",
+      "2": "Proficient in Agile methodologies, Git version control, and cloud-based services like AWS.",
+      "3": "Dedicated to writing clean, maintainable, and testable code while adhering to SOLID principles and modern design patterns. Experienced in collaborating effectively, mentoring junior developers, and actively participating in architectural discussions to build scalable solutions."
+    },
+  },
   "skills": {
     "title": "Skills",
     "backend": "Backend",
