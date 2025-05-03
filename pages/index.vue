@@ -21,9 +21,9 @@ useHead({
       <div class="container mx-auto px-8 relative z-10">
         <div class="flex flex-col md:flex-row items-center">
           <div class="md:w-2/3 lg:w-1/2 mb-8 md:mb-0 text-white">
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            <h1 class="text-4xl md:text-5xl font-bold mb-2">
               <span class="block text-white">{{ t("hero.greeting") }}</span>
-              <span class="text-primary-300">{{ t("hero.fullName") }}</span>
+              <span class="block mt-8 text-primary-300">{{ t("hero.fullName") }}</span>
             </h1>
             <h2 class="text-2xl md:text-3xl text-gray-200 mb-6">
               {{ t("hero.title") }}
@@ -58,19 +58,19 @@ useHead({
           <ul class="space-y-6">
             <li class="flex items-start space-x-4">
               <span class="text-primary-500">●</span>
-              <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed flex-1">
+              <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex-1">
                 {{ t('professional.summary.1') }}
               </p>
             </li>
             <li class="flex items-start space-x-4">
               <span class="text-primary-500">●</span>
-              <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed flex-1">
+              <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex-1">
                 {{ t('professional.summary.2') }}
               </p>
             </li>
             <li class="flex items-start space-x-4">
               <span class="text-primary-500">●</span>
-              <p class="text-lg text-gray-700 dark:text-gray-300 leading-relaxed flex-1">
+              <p class="text-sm text-gray-700 dark:text-gray-300 leading-relaxed flex-1">
                 {{ t('professional.summary.3') }}
               </p>
             </li>
@@ -102,7 +102,7 @@ useHead({
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="text-gray-700 dark:text-gray-300">{{
+                <span class="text-sm text-gray-700 dark:text-gray-300">{{
                   t("skills.technologies.laravel")
                 }}</span>
               </li>
@@ -113,7 +113,7 @@ useHead({
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="text-gray-700 dark:text-gray-300">{{
+                <span class="text-sm text-gray-700 dark:text-gray-300">{{
                   t("skills.technologies.php")
                 }}</span>
               </li>
@@ -124,13 +124,13 @@ useHead({
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="text-gray-700 dark:text-gray-300">{{
+                <span class="text-sm text-gray-700 dark:text-gray-300">{{
                   t("skills.technologies.springboot")
                 }}</span>
               </li>
             </ul>
             <NuxtLink to="/skills"
-              class="mt-4 inline-block text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300">
+              class="mt-4 inline-block text-sm text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300">
               {{ t("skills.learnMore") }}
             </NuxtLink>
           </div>
@@ -148,7 +148,7 @@ useHead({
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="text-gray-700 dark:text-gray-300">{{
+                <span class="text-sm text-gray-700 dark:text-gray-300">{{
                   t("skills.technologies.vuejs")
                 }}</span>
               </li>
@@ -159,7 +159,7 @@ useHead({
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="text-gray-700 dark:text-gray-300">{{
+                <span class="text-sm text-gray-700 dark:text-gray-300">{{
                   t("skills.technologies.javascript")
                 }}</span>
               </li>
@@ -170,13 +170,13 @@ useHead({
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="text-gray-700 dark:text-gray-300">{{
+                <span class="text-sm text-gray-700 dark:text-gray-300">{{
                   t("skills.technologies.htmlCss")
                 }}</span>
               </li>
             </ul>
             <NuxtLink to="/skills"
-              class="mt-4 inline-block text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300">
+              class="mt-4 inline-block text-sm text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300">
               {{ t("skills.learnMore") }}
             </NuxtLink>
           </div>
@@ -194,7 +194,7 @@ useHead({
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="text-gray-700 dark:text-gray-300">{{
+                <span class="text-sm text-gray-700 dark:text-gray-300">{{
                   t("skills.technologies.git")
                 }}</span>
               </li>
@@ -205,7 +205,7 @@ useHead({
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="text-gray-700 dark:text-gray-300">{{
+                <span class="text-sm text-gray-700 dark:text-gray-300">{{
                   t("skills.technologies.aws")
                 }}</span>
               </li>
@@ -216,13 +216,13 @@ useHead({
                     d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
                     clip-rule="evenodd" />
                 </svg>
-                <span class="text-gray-700 dark:text-gray-300">{{
+                <span class="text-sm text-gray-700 dark:text-gray-300">{{
                   t("skills.technologies.jira")
                 }}</span>
               </li>
             </ul>
             <NuxtLink to="/skills"
-              class="mt-4 inline-block text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300">
+              class="mt-4 inline-block text-sm text-primary-600 dark:text-primary-400 hover:text-primary-800 dark:hover:text-primary-300">
               {{ t("skills.learnMore") }}
             </NuxtLink>
           </div>
@@ -236,7 +236,7 @@ useHead({
         <h2 class="text-3xl font-bold mb-4 text-white">
           {{ t("contact.title") }}
         </h2>
-        <p class="text-lg mb-8 max-w-2xl mx-auto text-gray-100">
+        <p class="text-sm mb-8 max-w-2xl mx-auto text-gray-100">
           {{ t("contact.cta") }}
         </p>
         <NuxtLink to="/contact"

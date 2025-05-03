@@ -47,16 +47,11 @@ const submitForm = async () => {
 
 <template>
   <div>
-    <!-- Header -->
-    <section class="bg-primary-50 dark:bg-primary-900 py-16">
-      <div class="container mx-auto px-8">
-        <h1 class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">{{ t('contact.title') }}</h1>
-        <div class="w-20 h-1 bg-primary-500 mx-auto mb-8"></div>
-        <p class="text-lg text-center text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
-          {{ t('contact.intro') }}
-        </p>
-      </div>
-    </section>
+    <!-- Using the PageHeader component -->
+    <PageHeader
+      titleKey="contact.title"
+      descriptionKey="contact.intro"
+    />
 
     <!-- Contact Form -->
     <section class="py-16 bg-white dark:bg-gray-800 transition-colors duration-200">

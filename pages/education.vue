@@ -11,7 +11,7 @@ useHead({
 const educations = [
   {
     degree: 'Masters of Computer Application',
-    institution: 'Girijananda Chowdhury Institute of Management and Technology, Gauhati University',
+    institution: 'Gauhati University',
     duration: '2012 – 2015',
     description: 'Advanced studies in computer application with focus on software development, database management, and system analysis.'
   },
@@ -55,16 +55,11 @@ const certifications = [];
 
 <template>
   <div>
-    <!-- Header -->
-    <section class="bg-primary-50 dark:bg-primary-900 py-16">
-      <div class="container mx-auto px-8">
-        <h1 class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">{{ t('education.title') }}</h1>
-        <div class="w-20 h-1 bg-primary-500 mx-auto mb-8"></div>
-        <p class="text-lg text-center text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
-          A strong educational foundation combined with practical experience has shaped my technical expertise.
-        </p>
-      </div>
-    </section>
+    <!-- Using the PageHeader component -->
+    <PageHeader
+      titleKey="education.title"
+      descriptionKey="education.intro"
+    />
 
     <!-- Education Timeline -->
     <section class="py-16 bg-white dark:bg-gray-800 transition-colors duration-200">
@@ -88,7 +83,7 @@ const certifications = [];
               <!-- Content -->
               <div class="w-full md:w-5/12">
                 <div :class="[
-                  'bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border-t-4 border-primary-500 transition-colors duration-200',
+                  'bg-white dark:bg-gray-800 p-6 shadow-md border-t-4 border-primary-500 transition-colors duration-200',
                   index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'
                 ]">
                   <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ edu.degree }}</h3>
@@ -114,7 +109,7 @@ const certifications = [];
         <h2 class="text-3xl font-bold text-gray-900 mb-10 text-center">Professional Certifications</h2>
         
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <div v-for="(cert, index) in certifications" :key="index" class="bg-white p-6 rounded-lg shadow-md border-l-4 border-primary-500">
+          <div v-for="(cert, index) in certifications" :key="index" class="bg-white p-6 shadow-md border-l-4 border-primary-500">
             <div class="flex justify-between items-start">
               <div>
                 <h3 class="text-xl font-bold text-gray-900">{{ cert.title }}</h3>
@@ -135,7 +130,7 @@ const certifications = [];
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- English -->
-          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border-t-4 border-primary-500 text-center transition-colors duration-200">
+          <div class="bg-white dark:bg-gray-800 p-6 shadow-md border-t-4 border-primary-500 text-center transition-colors duration-200">
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ t('languages.english') }}</h3>
             <p class="text-gray-600 dark:text-gray-400 mb-4">Fluent</p>
             <div class="flex justify-center">
@@ -144,7 +139,7 @@ const certifications = [];
           </div>
           
           <!-- Hindi -->
-          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border-t-4 border-primary-500 text-center transition-colors duration-200">
+          <div class="bg-white dark:bg-gray-800 p-6 shadow-md border-t-4 border-primary-500 text-center transition-colors duration-200">
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ t('languages.hindi') }}</h3>
             <p class="text-gray-600 dark:text-gray-400 mb-4">Fluent</p>
             <div class="flex justify-center">
@@ -153,7 +148,7 @@ const certifications = [];
           </div>
           
           <!-- Assamese -->
-          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border-t-4 border-primary-500 text-center transition-colors duration-200">
+          <div class="bg-white dark:bg-gray-800 p-6 shadow-md border-t-4 border-primary-500 text-center transition-colors duration-200">
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ t('languages.assamese') }}</h3>
             <p class="text-gray-600 dark:text-gray-400 mb-4">Fluent</p>
             <div class="flex justify-center">

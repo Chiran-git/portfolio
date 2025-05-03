@@ -72,6 +72,7 @@ const setLocale = async (loc: LocaleType) => {
       <div class="flex justify-between items-center h-16">
         <!-- Logo (Left) -->
         <div class="flex-shrink-0 flex items-center w-1/4">
+          <img src="~/assets/images/iam.jpg" alt="Profile Photo" class="h-8 w-8 rounded-full mr-2 object-cover" />
           <NuxtLink :to="localePath('/')" class="text-primary-600 dark:text-primary-400 font-bold text-xl">Chiranjeeb</NuxtLink>
         </div>
         

@@ -2,6 +2,7 @@
 import { useI18n } from 'vue-i18n';
 import { ref, watchEffect } from 'vue';
 import { useHead } from '#imports';
+import PageHeader from '@/components/PageHeader.vue';
 
 const { t, locale } = useI18n();
 
@@ -114,26 +115,21 @@ watchEffect(() => {
 
 <template>
   <div>
-    <!-- Header -->
-    <section class="bg-primary-50 dark:bg-primary-900 py-16">
-      <div class="container mx-auto px-8">
-        <h1 class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">{{ t('experience.title') }}</h1>
-        <div class="w-20 h-1 bg-primary-500 mx-auto mb-8"></div>
-        <p class="text-lg text-center text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
-          {{ t('experience.experienceSummary') }}
-        </p>
-      </div>
-    </section>
+    <!-- Using the PageHeader component -->
+    <PageHeader
+      titleKey="experience.title"
+      descriptionKey="experience.experienceSummary"
+    />
 
     <!-- Professional Summary -->
     <section class="py-12 bg-white dark:bg-gray-800 transition-colors duration-200">
       <div class="container mx-auto px-8">
         <div class="bg-primary-50 dark:bg-primary-900 p-8 rounded-lg mb-12">
           <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-4">{{ t('experience.professionalSummary') }}</h2>
-          <p class="text-gray-700 dark:text-gray-300 mb-4">
+          <p class="text-sm text-gray-700 dark:text-gray-300 mb-4">
             {{ t('experience.summaryText') }}
           </p>
-          <p class="text-gray-700 dark:text-gray-300">
+          <p class="text-sm text-gray-700 dark:text-gray-300">
             {{ t('experience.additionalInfo') }}
           </p>
         </div>
@@ -143,7 +139,7 @@ watchEffect(() => {
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
           <div v-for="(competency, index) in competencies" :key="index" class="bg-white dark:bg-gray-800 p-6 shadow-stronger border-l-4 border-primary-500">
             <h3 class="font-bold text-lg mb-2 text-gray-900 dark:text-white">{{ competency.title }}</h3>
-            <p class="text-gray-600 dark:text-gray-400">{{ competency.description }}</p>
+            <p class="text-sm text-gray-600 dark:text-gray-400">{{ competency.description }}</p>
           </div>
         </div>
         
@@ -166,10 +162,10 @@ watchEffect(() => {
                   <h3 class="text-xl font-bold text-gray-900 dark:text-white">{{ exp.role }}</h3>
                   <span class="md:ml-2 text-primary-600 dark:text-primary-400 font-medium">@ {{ exp.company }}</span>
                 </div>
-                <p class="text-gray-500 dark:text-gray-400 mb-4">{{ exp.period }}</p>
+                <p class="text-sm text-gray-500 dark:text-gray-400 mb-4">{{ exp.period }}</p>
                 
                 <ul class="list-disc pl-5 mb-4 space-y-2">
-                  <li v-for="(item, i) in exp.description" :key="i" class="text-gray-700 dark:text-gray-300">
+                  <li v-for="(item, i) in exp.description" :key="i" class="text-sm text-gray-700 dark:text-gray-300">
                     {{ item }}
                   </li>
                 </ul>
@@ -190,7 +186,7 @@ watchEffect(() => {
     <section class="py-16 bg-primary-50 dark:bg-primary-900">
       <div class="container mx-auto px-8 text-center">
         <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white">{{ t('experience.interestedBackground') }}</h2>
-        <p class="text-lg mb-8 text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+        <p class="text-sm mb-8 text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
           {{ t('experience.learnMore') }}
         </p>
         <div class="flex justify-center space-x-4">
