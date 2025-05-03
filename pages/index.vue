@@ -231,7 +231,7 @@ useHead({
     </section>
 
     <!-- Call to Action -->
-    <section class="py-16 bg-primary-600 text-white">
+    <section class="py-16 bg-primary-500 text-white">
       <div class="container mx-auto px-8 text-center">
         <h2 class="text-3xl font-bold mb-4 text-white">
           {{ t("contact.title") }}
