@@ -90,7 +90,7 @@ useHead({
         </div>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
           <!-- Backend Skills -->
-          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border-t-4 border-primary-500">
+          <div class="bg-white dark:bg-gray-800 p-6 shadow-md border-2 border-primary-500 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-400/40 hover:translate-y-[-5px]">
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">
               {{ t("skills.backend") }}
             </h3>
@@ -136,7 +136,7 @@ useHead({
           </div>
 
           <!-- Frontend Skills -->
-          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border-t-4 border-primary-500">
+          <div class="bg-white dark:bg-gray-800 p-6 shadow-md border-2 border-primary-500 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-400/40 hover:translate-y-[-5px]">
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">
               {{ t("skills.frontend") }}
             </h3>
@@ -182,7 +182,7 @@ useHead({
           </div>
 
           <!-- Tools Skills -->
-          <div class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow-md border-t-4 border-primary-500">
+          <div class="bg-white dark:bg-gray-800 p-6 shadow-md border-2 border-primary-500 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-400/40 hover:translate-y-[-5px]">
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-4">
               {{ t("skills.tools") }}
             </h3>

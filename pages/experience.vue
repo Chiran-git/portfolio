@@ -137,7 +137,7 @@ watchEffect(() => {
         <!-- Core Competencies -->
         <h2 class="text-2xl font-bold text-gray-900 dark:text-white mb-6">{{ t('experience.coreCompetencies') }}</h2>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-          <div v-for="(competency, index) in competencies" :key="index" class="bg-white dark:bg-gray-800 p-6 shadow-stronger border-l-4 border-primary-500">
+          <div v-for="(competency, index) in competencies" :key="index" class="bg-white dark:bg-gray-800 p-6 shadow-stronger border-l-4 border-primary-500 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-400/40 hover:translate-y-[-5px]">
             <h3 class="font-bold text-lg mb-2 text-gray-900 dark:text-white">{{ competency.title }}</h3>
             <p class="text-sm text-gray-600 dark:text-gray-400">{{ competency.description }}</p>
           </div>
