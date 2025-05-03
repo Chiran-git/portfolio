@@ -1,0 +1,28 @@
+/* Scrollbar-like styling for skill bars */
+.skill-bar-track {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  height: 8px;
+  overflow: hidden;
+}
+
+.skill-bar-thumb {
+  background: linear-gradient(to right, #cb84d6, #9bbfe1);
+  border-radius: 10px;
+  height: 100%;
+  transition: width 0.5s ease-in-out;
+}
+
+/* Dark mode styles */
+.dark .skill-bar-track {
+  background-color: #2c2c2c;
+}
+
+.dark .skill-bar-thumb {
+  background: linear-gradient(to right, #cb84d6, #9bbfe1);
+}
+
+/* Hover effect */
+.skill-bar-track:hover .skill-bar-thumb {
+  opacity: 0.9;
+}

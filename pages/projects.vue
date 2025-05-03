@@ -2,6 +2,7 @@
 import { useI18n } from 'vue-i18n';
 import { ref } from 'vue';
 import { useHead } from '#imports';
+import PageHeader from '@/components/PageHeader.vue';
 
 const { t } = useI18n();
 
@@ -67,16 +68,11 @@ const closeProjectDetails = () => {
 
 <template>
   <div>
-    <!-- Header -->
-    <section class="bg-primary-50 dark:bg-primary-900 py-16">
-      <div class="container mx-auto px-8">
-        <h1 class="text-4xl font-bold text-center text-gray-900 dark:text-white mb-4">{{ t('projects.title') }}</h1>
-        <div class="w-20 h-1 bg-primary-500 mx-auto mb-8"></div>
-        <p class="text-lg text-center text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
-          Throughout my career, I've worked on various projects, from enterprise applications to scalable web platforms. Here are some highlights from my work.
-        </p>
-      </div>
-    </section>
+    <!-- Using the PageHeader component -->
+    <PageHeader
+      titleKey="projects.title"
+      descriptionKey="projects.intro"
+    />
 
     <!-- Projects Grid -->
     <section class="py-16 bg-white dark:bg-gray-800 transition-colors duration-200">
@@ -93,7 +89,7 @@ const closeProjectDetails = () => {
             </div>
             <div class="p-6">
               <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ project.name }}</h3>
-              <p class="text-gray-700 dark:text-gray-400 mb-4 line-clamp-2">{{ project.description }}</p>
+              <p class="text-sm text-gray-700 dark:text-gray-400 mb-4 line-clamp-2">{{ project.description }}</p>
               <div class="flex flex-wrap gap-2 mb-4">
                 <span v-for="(tech, index) in project.technologies.slice(0, 3)" :key="index" class="bg-primary-50 dark:bg-primary-900 text-primary-700 dark:text-primary-400 px-2 py-1 rounded-full text-xs">
                   {{ tech }}
@@ -136,13 +132,13 @@ const closeProjectDetails = () => {
           
           <div class="mb-6">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Description</h3>
-            <p class="text-gray-700 dark:text-gray-300">{{ selectedProject.description }}</p>
+            <p class="text-sm text-gray-700 dark:text-gray-300">{{ selectedProject.description }}</p>
           </div>
           
           <div class="mb-6">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Key Features</h3>
             <ul class="list-disc pl-5 space-y-2">
-              <li v-for="(feature, index) in selectedProject.features" :key="index" class="text-gray-700 dark:text-gray-300">
+              <li v-for="(feature, index) in selectedProject.features" :key="index" class="text-sm text-gray-700 dark:text-gray-300">
                 {{ feature }}
               </li>
             </ul>
@@ -159,7 +155,7 @@ const closeProjectDetails = () => {
           
           <div class="mb-6">
             <h3 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">{{ t('projects.role') }}</h3>
-            <p class="text-gray-700 dark:text-gray-300">{{ selectedProject.role }}</p>
+            <p class="text-sm text-gray-700 dark:text-gray-300">{{ selectedProject.role }}</p>
           </div>
           
           <div class="flex justify-end">
@@ -175,7 +171,7 @@ const closeProjectDetails = () => {
     <section class="py-16 bg-primary-50 dark:bg-primary-900 transition-colors duration-200">
       <div class="container mx-auto px-8 text-center">
         <h2 class="text-3xl font-bold mb-4 text-gray-900 dark:text-white">Interested in working together?</h2>
-        <p class="text-lg mb-8 text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
+        <p class="text-sm mb-8 text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">
           I'm always open to discussing new projects and opportunities. Feel free to reach out!
         </p>
         <NuxtLink to="/contact" class="btn btn-primary">
