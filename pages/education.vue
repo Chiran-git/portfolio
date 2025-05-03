@@ -83,7 +83,7 @@ const certifications = [];
               <!-- Content -->
               <div class="w-full md:w-5/12">
                 <div :class="[
-                  'bg-white dark:bg-gray-800 p-6 shadow-md border-t-4 border-primary-500 transition-colors duration-200',
+                  'bg-white dark:bg-gray-800 p-6 shadow-md border-t-4 border-primary-500 transition-all duration-300 hover:shadow-2xl hover:shadow-primary-400/40 hover:translate-y-[-5px]',
                   index % 2 === 0 ? 'md:mr-8' : 'md:ml-8'
                 ]">
                   <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ edu.degree }}</h3>
@@ -130,7 +130,7 @@ const certifications = [];
         
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
           <!-- English -->
-          <div class="bg-white dark:bg-gray-800 p-6 shadow-md border-t-4 border-primary-500 text-center transition-colors duration-200">
+          <div class="bg-white dark:bg-gray-800 p-6 shadow-md border-t-4 border-primary-500 text-center transition-all duration-300 hover:shadow-2xl hover:shadow-primary-400/40 hover:translate-y-[-5px]">
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ t('languages.english') }}</h3>
             <p class="text-gray-600 dark:text-gray-400 mb-4">Fluent</p>
             <div class="flex justify-center">
@@ -139,7 +139,7 @@ const certifications = [];
           </div>
           
           <!-- Hindi -->
-          <div class="bg-white dark:bg-gray-800 p-6 shadow-md border-t-4 border-primary-500 text-center transition-colors duration-200">
+          <div class="bg-white dark:bg-gray-800 p-6 shadow-md border-t-4 border-primary-500 text-center transition-all duration-300 hover:shadow-2xl hover:shadow-primary-400/40 hover:translate-y-[-5px]">
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ t('languages.hindi') }}</h3>
             <p class="text-gray-600 dark:text-gray-400 mb-4">Fluent</p>
             <div class="flex justify-center">
@@ -148,7 +148,7 @@ const certifications = [];
           </div>
           
           <!-- Assamese -->
-          <div class="bg-white dark:bg-gray-800 p-6 shadow-md border-t-4 border-primary-500 text-center transition-colors duration-200">
+          <div class="bg-white dark:bg-gray-800 p-6 shadow-md border-t-4 border-primary-500 text-center transition-all duration-300 hover:shadow-2xl hover:shadow-primary-400/40 hover:translate-y-[-5px]">
             <h3 class="text-xl font-bold text-gray-900 dark:text-white mb-2">{{ t('languages.assamese') }}</h3>
             <p class="text-gray-600 dark:text-gray-400 mb-4">Fluent</p>
             <div class="flex justify-center">
